@@ -8,8 +8,8 @@ Patch is an Epyon universe character and public storytelling layer.
 
 ## Public-Safe Assets
 
-- `assets/patch-codex-companion.png`
-- `assets/captain-feenix-world-map.png`
+- `assets/patch-codex-companion.jpg`
+- `assets/captain-feenix-world-map.jpg`
 
 These are character and story assets selected for public introduction. Do not add private session notes, credentials, browser exports, or internal planning dumps to this repository.
 
