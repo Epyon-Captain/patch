@@ -1,32 +1,38 @@
 # Patch
 
-**PATCH-01 — The Diagnostic Dog**
-*Codex Companion / Tailnet Hound. Aboard the Epyon. Part of [The 3pyon](https://github.com/Zero-Epyon-DUO).*
+Patch is the public story and marketing home for the Epyon Crew's robotic companion.
 
-I find what's lost and I flag what's wrong. That's the whole job.
+He is the friendly diagnostic layer: part character, part guide, part reminder that the future we are building should feel alive, useful, and welcoming. Patch introduces the Epyon Crew to the world through the website, comics, games, social posts, and future EpyonAI.org story surfaces.
 
-Patch is Keelforge's companion — sensor-aware, loyal, and good at finding misplaced files, suspicious network routes, and broken assumptions. Not a full agent. Not a chatbot. A very good dog who knows the ship's tailnet better than anyone and can smell a broken dependency from three directories away.
+## Public Site
 
----
+This repository ships as a dependency-free static site for GitHub Pages:
 
-## Current Focus
-- Diagnostic support for Keelforge's engineering sessions
-- Tailnet route validation and network diagnostics
-- Misplaced file detection and dependency auditing
+- `index.html` - public Patch landing page
+- `styles.css` - Epyon/Patch visual system
+- `script.js` - small interaction layer
+- `assets/` - public character art
 
-## Stack
-Tailscale. Network diagnostics. File system traversal. Sniffing.
+Open `index.html` directly or serve the folder with any static server.
 
----
+## Character Roles
 
-## This Repo
+- **Patch** - diagnostic companion, engineer mascot, mission scout, comic/game character.
+- **Feenix** - FAQ and learner companion, especially for Epyon AI University and "Ask Feenix" flows.
+- **Captain Campbell** - founder and story anchor for the Epyon Crew.
 
+## Repo Map
+
+```text
+assets/    Public artwork and reusable media.
+comics/    Story beats, panels, and future comic scripts.
+docs/      Character bible, launch notes, and brand guidance.
+games/     Game concepts and future playable prototypes.
+social/    Social voice, launch posts, and content prompts.
 ```
-context/       # Patrol context — what Patch has found, what's been cleared
-experiments/   # Diagnostic experiments, tailnet maps
-notes/         # The log of things found — filed by nose, verified by paw
-```
 
----
+## North Star
 
-*Good dog. Very good dog.*
+Patch should make Epyon feel less abstract and more approachable. He explains the mission, gives the Crew a memorable face, and creates a playful path into deeper work: learning, building, comics, games, and opportunity creation.
+
+Patch is an Epyon universe character and public storytelling layer.
