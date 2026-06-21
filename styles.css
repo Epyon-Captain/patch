@@ -243,6 +243,7 @@ h1 {
 
 .story-band,
 .roadmap,
+.learning-center,
 .media-kit,
 .final-cta {
   padding: clamp(3.5rem, 7vw, 6rem) clamp(1rem, 5vw, 4rem);
@@ -260,7 +261,8 @@ h1 {
 }
 
 .section-label,
-.roadmap-grid span {
+.roadmap-grid span,
+.lesson-grid span {
   color: var(--green);
   font-size: 0.78rem;
   font-weight: 900;
@@ -283,6 +285,7 @@ h2 {
 
 .duo-grid article,
 .roadmap-grid article,
+.lesson-grid article,
 .kit-grid a {
   border: 1px solid var(--line);
   background: rgba(4, 15, 23, 0.68);
@@ -328,36 +331,54 @@ h2 {
   background: linear-gradient(180deg, rgba(3, 10, 17, 0.88), rgba(7, 28, 40, 0.96));
 }
 
+.learning-center {
+  background:
+    radial-gradient(circle at 16% 18%, rgba(145, 244, 67, 0.14), transparent 24rem),
+    linear-gradient(180deg, rgba(5, 18, 26, 0.98), rgba(3, 10, 17, 0.92));
+  border-bottom: 1px solid var(--line);
+}
+
 .roadmap-heading {
   max-width: 48rem;
   margin: 0 auto 2rem;
   text-align: center;
 }
 
-.roadmap-grid {
+.roadmap-grid,
+.lesson-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1rem;
 }
 
-.roadmap-grid article {
+.roadmap-grid article,
+.lesson-grid article {
   min-height: 18rem;
   padding: 1.25rem;
   border-radius: 0.55rem;
   transition: transform 180ms ease, border-color 180ms ease;
 }
 
-.roadmap-grid article:hover {
+.lesson-grid article {
+  background:
+    linear-gradient(180deg, rgba(9, 34, 48, 0.86), rgba(4, 15, 23, 0.72)),
+    radial-gradient(circle at 90% 12%, rgba(87, 216, 255, 0.2), transparent 11rem);
+}
+
+.roadmap-grid article:hover,
+.lesson-grid article:hover {
   transform: translateY(-4px);
   border-color: var(--line-strong);
 }
 
-.roadmap-grid h3 {
+.roadmap-grid h3,
+.lesson-grid h3 {
   margin: 3.9rem 0 0.75rem;
   font-size: 1.25rem;
 }
 
-.roadmap-grid p {
+.roadmap-grid p,
+.lesson-grid p {
   color: var(--muted);
   line-height: 1.55;
 }
@@ -453,6 +474,7 @@ h2 {
   }
 
   .roadmap-grid,
+  .lesson-grid,
   .kit-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -492,11 +514,13 @@ h2 {
 
   .duo-grid,
   .roadmap-grid,
+  .lesson-grid,
   .kit-grid {
     grid-template-columns: 1fr;
   }
 
-  .roadmap-grid article {
+  .roadmap-grid article,
+  .lesson-grid article {
     min-height: 14rem;
   }
 }
