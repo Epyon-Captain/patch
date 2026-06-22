@@ -7,7 +7,7 @@ navLinks.forEach((link) => {
   });
 });
 
-document.querySelectorAll('.roadmap-grid article').forEach((card) => {
+document.querySelectorAll('.roadmap-grid article, .lesson-grid article').forEach((card) => {
   card.addEventListener('pointermove', (event) => {
     const rect = card.getBoundingClientRect();
     const x = ((event.clientX - rect.left) / rect.width - 0.5) * 5;
