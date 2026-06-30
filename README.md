@@ -1,8 +1,8 @@
-# Patch AI Learning Center
+# Patch AI Learning Center 
 
-Patch is the public story, learning, and media home for the Epyon Crew's AI education characters.
+Patch is the public story, learning, and media home for the Epyon Crew's AI education characters with a focus on youth education. 
 
-Codex the Coder and his dog Patch introduce kids to responsible AI through comics, mini-games, social posts, and future EpyonAI.org story surfaces. Patch stays friendly and playful while helping learners understand that AI can help people learn, build, explore, earn, and evolve only when it is used with kindness, curiosity, privacy, and proof.
+"Codex the Coder" and his dog Patch introduce kids to responsible AI through comics, mini-games, social posts, and future EpyonAI.org story surfaces. Patch stays friendly and playful while helping learners understand that AI can help people learn, build, explore, earn, and evolve only when it is used with kindness, curiosity, privacy, and proof.
 
 ## Public Site
 
@@ -23,6 +23,7 @@ Open `index.html` directly or serve the folder with any static server.
 - **Feenix** - Captain's dog and learner companion who asks plain-language questions.
 - **Saige** - creative teammate who helps stories model empathy and healthy choices.
 - **Charlotte** - Saige's dog and playful friend to Patch and Feenix.
+- **Ms. Foxy Wiggles** - Heather's dog plays a grumpy old teacher around the kids, but when she gets away from them lookout! It's Wiggle Time. 
 
 ## Learning Center Focus
 
@@ -33,14 +34,6 @@ Every comic or mini-game should teach one kid-safe AI habit:
 - **Truth** - check facts, sources, and screenshots before sharing AI-generated claims.
 - **Privacy** - keep addresses, passwords, school details, family information, and private photos out of AI tools unless a trusted adult approves.
 
-## Public Safety Cleanup
-
-Keep the repository safe for public release:
-
-- Do not commit credentials, `.env` files, browser exports, private session logs, or internal recovery dumps.
-- Keep source paths out of public copy unless they are intentionally published.
-- Prefer static, dependency-free web work unless a real interactive feature needs a framework.
-- Connect all comics, games, and social content back to Epyon's mission: learn, build, explore, earn, and evolve.
 
 ## Repo Map
 
@@ -52,8 +45,3 @@ games/     Game concepts and future playable prototypes.
 social/    Social voice, launch posts, and content prompts.
 ```
 
-## North Star
-
-Patch should make Epyon feel less abstract and more approachable. He explains the mission, gives the Crew a memorable face, and creates a playful path into deeper work: responsible AI learning, building, comics, games, and opportunity creation.
-
-Patch is an Epyon universe character and public storytelling layer.
