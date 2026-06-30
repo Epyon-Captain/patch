@@ -15,6 +15,75 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <style>
+      .meet-the-characters {
+        background:
+          linear-gradient(90deg, rgba(6, 18, 26, 0.96), rgba(4, 13, 20, 0.82)),
+          radial-gradient(circle at 82% 22%, rgba(87, 216, 255, 0.18), transparent 24rem);
+      }
+
+      .meet-the-characters .character-gallery {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+        margin: 0;
+      }
+
+      .meet-the-characters .character-card {
+        margin: 0;
+        border: 1px solid var(--line);
+        border-radius: 0.75rem;
+        overflow: hidden;
+        background: rgba(4, 15, 23, 0.78);
+        box-shadow: var(--shadow);
+      }
+
+      .meet-the-characters .character-card img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 4 / 5;
+        object-fit: cover;
+      }
+
+      .meet-the-characters figcaption {
+        padding: 1rem 1.1rem 1.2rem;
+      }
+
+      .meet-the-characters figcaption strong {
+        display: block;
+        color: var(--green);
+        font-size: 1rem;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+
+      .meet-the-characters figcaption span {
+        display: block;
+        margin-top: 0.5rem;
+        color: var(--muted);
+        line-height: 1.5;
+      }
+
+      .meet-the-characters .duo-grid article {
+        min-height: 7.75rem;
+      }
+
+      @media (max-width: 980px) {
+        .meet-the-characters {
+          grid-template-columns: 1fr;
+        }
+
+        .meet-the-characters .character-gallery {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 620px) {
+        .meet-the-characters .character-gallery {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
   </head>
   <body>
     <header class="site-header" aria-label="Primary">
@@ -27,6 +96,7 @@
       </a>
       <nav class="nav-links" aria-label="Site sections">
         <a href="#story">Crew</a>
+        <a href="#characters">Characters</a>
         <a href="#lessons">Lessons</a>
         <a href="#comics">Comics</a>
         <a href="#games">Games</a>
@@ -87,6 +157,51 @@
         <figure class="story-art">
           <img src="assets/captain-feenix-world-map.jpg" alt="Captain Campbell and Feenix in the Epyon command room" />
         </figure>
+      </section>
+
+      <section id="characters" class="story-band meet-the-characters" aria-labelledby="characters-title">
+        <div class="section-copy">
+          <p class="section-label">Meet the Characters</p>
+          <h2 id="characters-title">Each character has a role in helping learners think before they use AI.</h2>
+          <p>
+            Patch keeps the mission playful, Codex explains the why, and the rest of the crew turns hard choices
+            into clear examples kids can remember.
+          </p>
+          <div class="duo-grid">
+            <article>
+              <strong>Patch</strong>
+              <span>Robotic scout and reminder to verify facts before sharing.</span>
+            </article>
+            <article>
+              <strong>Codex</strong>
+              <span>Coder mentor who turns mistakes into learning moments.</span>
+            </article>
+            <article>
+              <strong>Feenix</strong>
+              <span>Curious dog who asks the plain-language questions.</span>
+            </article>
+            <article>
+              <strong>Charlotte</strong>
+              <span>Playful teammate who helps the crew practice kindness and consent.</span>
+            </article>
+          </div>
+        </div>
+        <div class="character-gallery" aria-label="Character artwork">
+          <figure class="character-card">
+            <img src="assets/patch-codex-companion.jpg" alt="Patch with Codex and a robotic companion" />
+            <figcaption>
+              <strong>Patch + Codex</strong>
+              <span>Robotic companion and coder mentor showing safe AI habits.</span>
+            </figcaption>
+          </figure>
+          <figure class="character-card">
+            <img src="assets/captain-feenix-world-map.jpg" alt="Captain Campbell and Feenix in the Epyon command room" />
+            <figcaption>
+              <strong>Captain + Feenix</strong>
+              <span>Mission anchor and learner companion asking better questions.</span>
+            </figcaption>
+          </figure>
+        </div>
       </section>
 
       <section id="lessons" class="learning-center" aria-labelledby="lessons-title">
